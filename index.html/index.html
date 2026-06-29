@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cloud Smart Home Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1><i class="fa-solid fa-house"></i> Smart Home Dashboard</h1>
+
+<p>Cloud-Based Smart Home Monitoring & Automation Platform</p>
+
+</header>
+
+<div class="container">
+
+<!-- Living Room Light -->
+
+<div class="card">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+<h2>Living Room Light</h2>
+
+<p>Status</p>
+
+<h3 id="lightStatus" style="color:red;">OFF</h3>
+
+<button onclick="toggleDevice('lightStatus',this)">
+Turn ON
+</button>
+
+</div>
+
+<!-- Ceiling Fan -->
+
+<div class="card">
+
+<i class="fa-solid fa-fan"></i>
+
+<h2>Ceiling Fan</h2>
+
+<p>Status</p>
+
+<h3 id="fanStatus" style="color:red;">OFF</h3>
+
+<button onclick="toggleDevice('fanStatus',this)">
+Turn ON
+</button>
+
+</div>
+
+<!-- Temperature -->
+
+<div class="card">
+
+<i class="fa-solid fa-temperature-three-quarters"></i>
+
+<h2>Temperature</h2>
+
+<p>Current Room Temperature</p>
+
+<h3 id="temperature">28°C</h3>
+
+<button onclick="updateTemperature()">
+Refresh
+</button>
+
+</div>
+
+<!-- Door -->
+
+<div class="card">
+
+<i class="fa-solid fa-door-open"></i>
+
+<h2>Main Door</h2>
+
+<p>Status</p>
+
+<h3 id="doorStatus" style="color:red;">Closed</h3>
+
+<button onclick="toggleDoor(this)">
+Open Door
+</button>
+
+</div>
+
+<!-- Security -->
+
+<div class="card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h2>Security System</h2>
+
+<p>Motion Sensor</p>
+
+<h3 id="security" style="color:green;">
+Secure
+</h3>
+
+<button onclick="sendAlert()">
+Test Alert
+</button>
+
+</div>
+
+<!-- AWS Services -->
+
+<div class="card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h2>AWS Cloud Services</h2>
+
+<p>Connected Services</p>
+
+<h3 style="color:#2563eb; font-size:18px;">
+
+EC2<br>
+Amazon S3<br>
+DynamoDB<br>
+AWS Lambda<br>
+CloudWatch
+
+</h3>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Cloud-Based Smart Home Monitoring & Automation Platform</h3>
+
+<p>
+
+AWS EC2 |
+Amazon S3 |
+DynamoDB |
+AWS Lambda |
+CloudWatch |
+Git |
+GitHub |
+DevOps
+
+</p>
+
+<p>
+
+© 2026 APSSDC Summer Internship Project
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
