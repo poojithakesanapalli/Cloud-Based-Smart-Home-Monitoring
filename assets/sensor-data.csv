@@ -1,0 +1,6 @@
+Time,Temperature,Gas,Smoke,Door,Status
+10:00,28,120,5,Closed,Normal
+10:05,29,125,6,Closed,Normal
+10:10,31,180,12,Open,Warning
+10:15,35,260,25,Open,Alert
+10:20,27,110,4,Closed,Normal
